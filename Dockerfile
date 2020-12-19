@@ -1,9 +1,10 @@
-FROM alpine:3.11
+FROM alpine:3.12
 
 RUN apk add --no-cache \
   bash \
-  curl \
   bind-tools \
-  busybox-extras
+  busybox-extras \
+  curl \
+  jq
 
 ENTRYPOINT ["/bin/bash"]
